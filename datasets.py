@@ -4,13 +4,14 @@ import numpy as np
 import xlsxwriter
 data=datasets.load_wine()
 target=(data['target'])
-#print(target)
-
+print(target)
+print(target.shape)
 values= data["data"]
 #print(values)
-
+print(values.shape)
 frame=pd.DataFrame(values)
 #print(frame)
+
 
 #print (f"Wartość maksymalna to {frame.max()}, wartość minimalna to {frame.min()}")
 
@@ -69,5 +70,5 @@ zbior_win= pd.DataFrame({
 
 #zbior_win.to_excel("zbior_danych_wino.xlsx")
 
-w=pd.read_excel("zbior_danych_wino.xlsx")
-print(w)
+#w=pd.read_excel("zbior_danych_wino.xlsx")
+#print(w)
